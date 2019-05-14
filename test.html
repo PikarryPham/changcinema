@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    #big{
+        width: 400px;
+        height: 400px;
+        background-color: yellowgreen;
+    }
+    #small{
+        width: 50px;
+        height: 50px;
+        background-color: lightseagreen;
+        position: relative;
+    }
+</style>
+<body>
+    <div id="big">
+        <div id="small"></div>
+        <!--<button id="btn"></button>-->
+    </div>
+    <script>
+        var smalldiv = document.getElementById("small");
+        var x = Math.random()*10;
+        var y = Math.random()*10;
+        var count  = 0;
+        var randomizeX = Math.random()*5;
+        var randomizeY = Math.random()*21;
+        var directionX = (Math.random()*10-0.5)>0; // == true
+        var directionY = (Math.random()*10-0.5)>0;
+        function alerting()
+        {
+            if(count === 1000)
+            {
+                alert("YOU ARE THE WINNER");
+                return;
+            }
+            console.log(count);
+        };
+        function changecolor()
+        {
+            var red = Math.floor(Math.random()*256);
+            var green = Math.floor(Math.random()*256);
+            var blue = Math.floor(Math.random()*256);
+            var bgcolor = "rgb(" +red+ "," +green+ "," +blue+")";
+            smalldiv.style.backgroundColor = bgcolor;
+            count = count + 10;
+            smalldiv.innerHTML=count;
+            alerting();
+           // console.log(count);
+        };
+        smalldiv.onclick=changecolor;
+        function animation()
+        {
+            if(directionX)
+            {
+                if(x >= 350)
+                {
+                    directionX = false;
+                }
+                x = x + randomizeX;
+            }else if(!directionX)
+            {
+                if(x<=0)
+                {
+                    directionX = true;
+                }
+                x = x - randomizeX;
+            };
+            smalldiv.style.left = x + "px";
+            if(directionY)
+            {
+                if(y>=350)
+                {
+                    directionY = false;
+                }
+                y = y + randomizeY;
+            }
+            else if(!directionY)
+            {
+                if(y<=0)
+                {
+                    directionY = true;
+                }
+                y = y - randomizeY;
+            };
+            smalldiv.style.top = y + "px";
+        }
+        
+        var setting = setInterval(animation,30);
+    </script>
+</body>
+</html>

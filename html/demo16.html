@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/demo16.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../javascript/slideshow.js">
+    <link rel="shortcut icon" href="/img/home-icon.png">
+    <title>DEMO 16</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="slideshow">
+                <img class="slides" src="../img/slide01.jpg" style="width: 100%">
+                <img class="slides" src="../img/slide02.jpg" style="width: 100%">
+                <img class="slides" src="../img/slide03.jpg" style="width: 100%">
+                <img class="slides" src="../img/slide04.jpg" style="width: 100%">
+                <img class="slides" src="../img/slide05.jpg" style="width: 100%">
+            </div>
+            <script src="../javascript/function.js"></script>
+            <!--<script src="../javascript/slideshow.js"></script>-->
+            <div class="navbar" id="nav">
+                <span class="logo">film W<i class="fas fa-globe-europe"></i>RLD</span>
+                <!--DAT THE SPAN VI THE IMG KHA GIONG THE SPAN, DEU CUNG DISPLAY: INLINE-->
+                <ul class="menu">
+                    <li><img src="../img/home-icon.png"></li>
+                    <li class="menuitem"><i class="fas fa-camera-retro"></i><a href="#">Thế giới phim</a>
+                        <ul class="submenu">
+                            <li><a href="#">Menu 1</a></li>
+                            <li class="sub_subitem"><a href="#">Menu 2</a>
+                                <ul class="sub_submenu">
+                                    <li><a  href="#">Menu 1</a></li>
+                                    <li><a  href="#">Menu 2</a></li>
+                                    <li><a  href="#">Menu 3</a></li>
+                                    <li><a  href="#">Menu 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Menu 3</a></li>
+                        </ul>
+                        <i class="fas fa-chevron-down"></i>
+                    </li>
+                    <li><i class="fas fa-file-image"></i><a href="#">Góc điện ảnh</a></li>
+                    <li><i class="fas fa-bullhorn"></i><a href="#">Khuyến mãi</a></li>
+                    <li><i class="fas fa-address-book"></i><a href="#">Thành viên</a><i class="fas fa-chevron-down"></i></li>
+                </ul>
+            </div>
+            <div class="information">
+                <div class="tabtitle">
+                    <div class="tab" onclick="showtab(0)">Theo Rạp</div>
+                    <div class="tab" onclick="showtab(1)">Theo Phim</div>
+                </div>
+                <div class="tabcontent">
+                    <div class="tabitem">
+                        <div class="select">
+                            <select name="rap" id="rap">
+                                <option value="#">Chọn rạp</option>
+                                <option value="CGV Vincom">CGV Vincom</option>
+                                <option value="Parkson Đồng Khởi">Parkson Đồng Khởi</option>
+                                <option value="CGV Pandora City">CGV Pandora City</option>
+                                <option value="CGV Vạn Hạnh Mall">CGV Vạn Hạnh Mall</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select name="ngay" id="ngay">
+                                <option value="#">Chọn ngày</option>
+                                <option value="9/5/2019">9/5/2019</option>
+                                <option value="10/5/2019">10/5/2019</option>
+                                <option value="11/5/2019">11/5/2019</option>
+                                <option value="12/5/2019">12/5/2019</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select name="suat" id="suat">
+                                <option value="#">Chọn suất</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:45">11:45</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:30">2:30</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select name="phim" id="phim">
+                                <option value="#">Chọn phim</option>
+                                <option value="Avengers Endgame">Avengers Endgame</option>
+                                <option value="Vì sao vụt sáng">Vì sao vụt sáng</option>
+                                <option value="The Lion King">The Lion King</option>
+                                <option value="Pokemon Detective Pikachu">Pokemon Detective Pikachu</option>
+                            </select>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">$ Mua vé</button>
+                        </div>
+                    </div>
+                    <div class="tabitem">
+                        <div class="select">
+                            <select name="rap" id="rap">
+                                <option value="#">Chọn rạp</option>
+                                <option value="CGV Vincom">CGV Vincom</option>
+                                <option value="Parkson Đồng Khởi">Parkson Đồng Khởi</option>
+                                <option value="CGV Pandora City">CGV Pandora City</option>
+                                <option value="CGV Vạn Hạnh Mall">CGV Vạn Hạnh Mall</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select name="ngay" id="ngay">
+                                <option value="#">Chọn ngày</option>
+                                <option value="9/5/2019">9/5/2019</option>
+                                <option value="10/5/2019">10/5/2019</option>
+                                <option value="11/5/2019">11/5/2019</option>
+                                <option value="12/5/2019">12/5/2019</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select name="suat" id="suat">
+                                <option value="#">Chọn suất</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:45">11:45</option>
+                                <option value="1:30">1:30</option>
+                                <option value="2:30">2:30</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select name="phim" id="phim">
+                                <option value="#">Chọn phim</option>
+                                <option value="Avengers Endgame">Avengers Endgame</option>
+                                <option value="Vì sao vụt sáng">Vì sao vụt sáng</option>
+                                <option value="The Lion King">The Lion King</option>
+                                <option value="Pokemon Detective Pikachu">Pokemon Detective Pikachu</option>
+                            </select>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">$ Mua vé</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tabtitle = document.getElementsByClassName("tab");
+            var tabitem = document.getElementsByClassName("tabitem");
+            function showtab(index)
+            {
+                for(i=0; i<tabitem.length;i++)
+                {
+                    console.log(tabitem[i]);
+                    tabitem[i].style.display = "none";
+                }
+                for(i=0; i<tabtitle.length; i++)
+                {
+                    tabtitle[i].classList.remove("active");
+                }
+                tabitem[index].style.display = "block";
+                tabtitle[index].classList.add("active");
+            }
+        </script>
+        <div class="content1">
+            <div class="subcontent">
+                <h2>Danh sách khuyến mãi</h2>
+                <div class="d-flex">
+                    <div class="image">
+                        <div class="layer">
+                            <h4>Xem Phim Qúa Đã - Nhận Qùa The Coffee House</h4>
+                            <p>Từ 24.10 - 29.10, <b>Galaxy Cinema</b> dành tặng cho các khách hàng thân thiết một phần quà đặc biệt</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <div class="layer">
+                            <h3>The More The Merrier - Halloween xôm tụ</h3>
+                            <p>Từ 15.10 - 31.10,<b>Combo Halloween</b>hấp dẫn nhất từ trước đến nay sẽ có mặt tại tất cả các rạp <b>Galaxy Cinema</b>trên toàn quốc</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <div class="layer">
+                            <h3>Cà The Tẹt Ga - Cuối tuần thật đã</h3>
+                            <p>
+                                Galaxy Cinema dành tặng các Stars chương trình ưu đãi vô cùng hấp dẫn <b>Cà Thẻ Tẹt Ga  - Cuối Tuần Thật Đã</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <div class="layer">
+                            <h3>Xem Phim Vui - Khui Qùa lớn Tại Galaxy Huỳnh Tấn Phát</h3>
+                            <p>Mừng<b>Galaxy Huỳnh Tấn Phát</b>tròn 01 tuổi, <b>Galaxy Cinema</b> dành tặng các chương trình ưu đãi khủng cho các khách hàng thân thiết</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <div class="layer">
+                            <h3>Xem Phim Galaxy Cinema - Ăn Pizza Thả Ga</h3>
+                            <p>Giup các Stars vượt qua mùa siêu phẩm "cháy túi" <b>Galaxy Cinema</b> dành tặng đến 50.000 voucher ăn thỏa thích pizza</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subcontent">
+                <div class="img">
+                    <div class="logo-image">
+                        <div class="sub-logoimage">
+                            <img src="../img/time-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="service">
+                        <h3>CHẤT LƯỢNG TUYỆT ĐỐI</h3>
+                    </div>
+                    <p>film World phục vụ quý khách với nhiều khung giờ khác nhau phù hợp với công việc, đảm bảo quý khách có những khoảng thời gian thật thư giãn với chúng tôi.</p>
+                    <ul>
+                        <li>Buổi sáng: 8h00 - 11h30</li>
+                        <li>Buổi chiều: 12h30 - 17h30</li>
+                        <li>Buổi tối: 18h30 - 21h30</li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <div class="logo-image">
+                        <div class="sub-logoimage">
+                            <img src="../img/money-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="service">
+                        <h3>GIÁ SINH VIÊN</h3>
+                    </div>
+                    <p>Với mục đích phục vụ cho tất cả mọi người, mức giá film World đưa ra
+                        cho các dịch vụ tuyệt vời của mình là hết sức bất ngờ. Qúy khách sẽ được phục vụ tốt nhất với mức giá rẻ chưa từng có.</p>
+                    <p  class="specialp_1">Ngày thường</p>
+                    <p style="padding-top: 0px; position: relative; right: 5%;">2D: 50K 3D: 80K</p>
+                    <p  class="specialp_2" style="padding-top: 0px;">Ngày lễ, thứ 7, chủ nhật: 70k</p>
+                    <p style="padding-top: 0px; position: relative; right: 5%;">2D: 70K 3D: 100K</p>
+                </div>
+                <div class="img">
+                    <div class="logo-image">
+                        <div class="sub-logoimage">
+                            <img src="../img/quality-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="service">
+                        <h3>THỜI GIAN LINH HOẠT</h3>
+                    </div>
+                    <p>"Tiền nào, của đó." film WORLD cam kết sẽ thực hiện tốt nhất các dịch vụ của mình đảm bảo quý khách sẽ cảm thấy hài lòng với số tiền mình bỏ ra.</p>
+                    <p>film WORLD áp dụng những công nghệ trình chiếu mới nhất, màn hình rộng chuẩn quốc tế, hình ảnh rõ nét, chất lượng tuyệt mĩ</p>
+                    <p>film WORLD cam kết đảm bảo về sức khỏe về mắt với hệ thống kiến trúc ghế ngồi với khoảng cách phù hợp an toàn</p>
+                </div>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movie-item" style="font-weight: bold;"onclick="showmovie(0)">Phim Đang Chiếu</div>
+            <div class="movie-item" style="font-weight: bold;"onclick="showmovie(1)">Phim Sắp Chiếu</div>
+        </div>
+        <script>
+                var movieitem = document.getElementsByClassName("content2");
+                var movietitle = document.getElementsByClassName("movie-item");
+                function showmovie(index)
+                {
+                    for(i=0; i<movieitem.length;i++)
+                    {
+                        console.log(movieitem[i]);
+                        movieitem[i].style.display="none";
+                    }
+                    for(i=0; i<movietitle.length; i++)
+                    {
+                        movietitle[i].classList.remove("chosen");
+                    }
+                    movieitem[index].style.display="block";
+                    movietitle[index].classList.add("chosen");
+                }
+        </script>
+        <div class="content2">
+            <div class="row" id="one">
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                        <img src="../img/1.jpg" alt="visaovutsang">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Vì sao vụt sáng</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                        <img src="../img/2.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Kế hoạch đổi chồng</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                            <img src="../img/3.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                            <p style="color: whitesmoke">Chân nhỏ bạn ở đâu</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                        <img src="../img/4.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Bào thai quỷ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="two">
+                <div class="box">
+                        <div class="light-layer">
+                                <div class="buy-ticket"><button>BUY TICKET</button></div>
+                            </div>
+                    <div class="buy-layer">
+                        <img src="../img/5.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Thiên thần công lý</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                        <img src="../img/6.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Đại chiến thành ẩn sĩ</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                        <img src="../img/7.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Lời nhắn của oan hồn</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>                
+                    <div class="buy-layer">
+                        <img src="../img/8.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Ngôi nhà có chiếc đồng hồ ma thuật</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content3">
+            <div class="comment">
+                <div class="coms">
+                    <div class="text">
+                        <p style="font-weight: bold; font-size: 20px; color: white">Góc Bình Luận</p>
+                    </div>
+                    <div class="textbox"></div>
+                    <div class="textbox"></div>
+                </div>
+                <div class="coms"></div>
+            </div>
+            <div class="footer">
+                <div class="footer_content">
+                    <p>GIỚI THIỆU</p>
+                    <ul>
+                        <li><i class="far fa-arrow-alt-circle-right"></i>VỀ CHÚNG TÔI</li>
+                        <li><i class="far fa-arrow-alt-circle-right"></i>THỎA THUẬN SỬ DỤNG</li>
+                        <li><i class="far fa-arrow-alt-circle-right"></i>QUY CHẾ HOẠT ĐỘNG</li>
+                        <li><i class="far fa-arrow-alt-circle-right"></i>CHÍNH SÁCH BẢO MẬT</li>
+                    </ul>
+                </div>
+                <div class="footer_content">
+                    <p>GÓC ĐIỆN ẢNH</p>
+                    <ul>
+                        <li><i class="far fa-file-video"></i>THỂ LOẠI PHIM</li>
+                        <li><i class="far fa-file-video"></i>BÌNH LUẬN PHIM</li>
+                        <li><i class="far fa-file-video"></i>BLOG ĐIỆN ẢNH</li>
+                        <li><i class="far fa-file-video"></i>PHIM HAY THÁNG</li>
+                    </ul>
+                </div>
+                <div class="footer_content">
+                    <p>HỖ TRỢ</p>
+                    <ul>
+                        <li>GÓP Ý</li>
+                        <li>SALE & SERVICE</li>
+                        <li>RẠP / GIÁ VÉ</li>
+                        <li>TUYỂN DỤNG</li>
+                    </ul>
+                </div>
+                <div class="footer_content">
+                    <div class="foot_sub">
+                        <p>LIÊN KẾT</p>
+                        <ul class="contact">
+                            <li><i class="fab fa-facebook"></i></li>
+                            <li><i class="fab fa-facebook"></i></li>
+                            <li><i class="fab fa-facebook"></i></li>
+                            <li><i class="fab fa-facebook"></i></li>
+                        </ul>
+                    </div>
+                    <div class="foot_sub">
+                        <p>DOWNLOAD APP</p>
+                        <ul class="contact">
+                            <li><i class="fab fa-android"></i></li>
+                            <li><i class="fab fa-apple"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var nav = document.getElementsByClassName("navbar")[0];
+        document.onscroll=function()
+        {
+            if(document.documentElement.scrollTop > 80)
+            {
+                nav.style.width="100%";
+                nav.style.top = "0%";
+                nav.style.left = "0%";
+            }
+            else{
+                nav.style.width="98%";
+                nav.style.top = "1%";
+                nav.style.left = "1%";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: sans-serif;
+}
+i{
+    color: white;
+    padding: 0px 5px;
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+.top{
+    width: 100%;
+    height: 680px;
+    /*background: rgb(255, 125, 125);*/
+   /* background:url("../img/slide01.jpg");*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+/*----------------THANH NAVBAR----------------*/
+.navbar{
+    width: 98%;
+    background-color: rgb(41, 39, 39);
+    left: 1%;
+    position: fixed;
+    top: 1%;
+    z-index: 10;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    min-width: 30%;
+    color: white;
+    font-size: 18px;
+}
+.menu{
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+}
+.menu>li{
+    padding: 10px 8px;
+    font-size: 15px;
+    width: 190px;
+    height: 110%;
+    text-align: center;
+}
+.menu>li:nth-child(1)
+{
+    padding: 10px 5px;
+    width: 50px;
+}
+.menu>li:nth-child(2), .menu>li:nth-child(3), .menu>li:nth-child(4), .menu>li:nth-child(5)
+{
+    margin: 5px 0px 0px 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*---------------SUBMENU THU NHAT ---------------*/
+.menuitem{
+    position: relative;
+}
+.submenu{
+    list-style-type: none;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 62%;
+    left: 0%;
+    display: none;
+}
+.submenu>li{
+    padding: 10px 25px;
+    font-size: 15px;
+    width: 180px;
+    text-align: center;
+}
+.menuitem:hover>.submenu{
+    display:block;
+    max-width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+/*-----------------SUB_SUBMENU-------------*/
+.sub_subitem{
+    position: relative;
+}
+.sub_submenu{
+    list-style-type: none;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: -40%;
+    left: 100%;
+    width: 100px;
+}
+.sub_submenu>li{
+    padding: 10px 10px;
+    font-size: 15px;
+    text-align: center;
+    display: none;
+}
+.sub_subitem:hover>.sub_submenu>li{
+    display:block;
+    transition: all 0.6s ease-in-out;
+}
+/*---------BANG THONG TIN & DAT VE O DIV THU HAI ------------ */
+.information{
+    width: 400px;
+    height: 400px;
+    background: rgb(34, 33, 33);
+    position: absolute;
+    top: 30%;
+    right: -1%;
+    transform: translate(-30%, 0%);
+    z-index: 1;
+    border-radius: 5px;
+    opacity: .8;
+    box-shadow: 4px 0px 15px white;
+}
+.tabtitle{
+    display: flex;
+    border-bottom: 2px solid lightseagreen;
+    width: 100%;
+    animation: faded 1s;
+}
+.tab{
+    padding: 20px 35px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.movie{
+    display: flex;
+    border-bottom: 5px solid lightseagreen;
+    width: 100%;
+    height: 50px;
+    background: url("../img/movie-details-bg.jpg");
+}
+.movie-item{
+    padding: 14px 25px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.tab:nth-child(1)
+{
+    border-top-left-radius: 5px;
+}
+.tab.active{
+    padding: 20px 35px;
+    cursor: pointer;
+    text-align: center;
+    background-color: lightseagreen;
+}
+.movie-item.chosen{
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    background-color: lightseagreen;
+}
+/*----------------EDIT SELECT OPTION ---------------*/
+.tabitem
+{
+    padding-top: 10px;
+}
+.tabitem:nth-child(2)
+{
+    display: none;
+}
+.select{
+    padding: 15px 25px;
+    
+}
+.select>select{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: white;
+    border: 1px solid rgb(255, 254, 200);
+    color: white;
+}
+.btn>button{
+   width: 82px;
+   height: 35px;
+   cursor: pointer;
+   background-color: black;
+   border: 1px solid white;
+   border-radius: 5px;
+   outline: none;
+   color: white;
+   box-shadow: 1px 0px 2px white;
+   float: right;
+   margin: 10px 25px;
+}
+/*-------CONTENT THỨ NHẤT CHỨA 2 CONTENT NHỎ GỒM CONTENT 5 ẢNH VÀ 3 ẢNH--------------*/
+.content1{
+    width: 100%;
+    height: 1000px;
+    /*background: orange;*/
+    background: url("../img/movie-details-bg.jpg");
+    display: grid;
+    grid-template-rows: 1.5fr 2fr;
+}
+.subcontent:nth-child(1)
+{
+    /*background: #dadada;*/
+}
+h2{
+    color: wheat;
+    padding: 5px 10px;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+}
+.image{
+    width: 20%;
+    height: 88%;
+    margin: 0px 10px;
+    padding-top: 10px;
+    vertical-align: middle;
+    position: relative;
+}
+.layer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 90%;
+    height: 45%;
+    background-color: rgba(0, 0, 0, 0.466);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.image:hover>.layer
+{
+    opacity: 1;
+}
+.image:nth-child(1)
+{
+    background: url("../img/promotion01.jpg");
+    background-position: center;
+}
+.image:nth-child(2)
+{
+    background: url("../img/promotion02.jpg");
+    background-position: center;
+}
+.image:nth-child(3)
+{
+    background: url("../img/promotion03.jpg");
+    background-position: center;
+}
+.image:nth-child(4)
+{
+    background: url("../img/promotion04.jpg");
+    background-position: center;
+}
+.image:nth-child(5)
+{
+    background: url("../img/promotion05.jpg");
+    background-position: center;
+}
+.subcontent:nth-child(2)
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.img{
+    width: 35%;
+    height: 95%;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0px 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 14px -7px 10px -4px rgba(207,209,209,0.7), -14px 7px 10px -4px rgba(207,209,209,0.7);
+}
+.img>p{
+    padding-top: 25px;
+    line-height: 30px;
+}
+.img>ul{
+    list-style-type: circle;
+    list-style-position: inside;
+    color: white;
+    text-align: left;
+    padding-left: 100px;
+}
+.logo-image{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.sub-logoimage{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+}
+.sub-logoimage>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:2px solid white;
+}
+.content2{
+    width: 100%;
+    height: 1150px;
+    background: brown;
+}
+.row{
+    display: flex;
+    background: lightslategray;
+    height: 44%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box{
+    background: whitesmoke;
+    width: 25%;
+    margin: 0px 10px;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 2fr 0.25fr;
+    position: relative;
+}
+.light-layer{
+    position: absolute;
+    background-color: black;
+    opacity: .6;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy-layer{
+    width: 100%;
+    height: 100%;
+}
+.buy-layer>img{
+    width: 100%;
+    height: 403.2px;
+    vertical-align: middle;
+}
+.inform{
+    background-color: black;
+}
+.content3{
+    width: 100%;
+    height: 680px;
+    background: limegreen;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.comment{
+    width: 100%;
+    /*background-color: #dedede;*/
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.coms{
+    width: 45%;
+    background-color: lightcoral;
+    height: 100%;
+    margin: 0px 5px;
+}
+/*---------------FOOTER MAU DEN--------------*/
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_content{
+    width: 20%;
+    /*background-color: yellow;*/
+    height: 100%;
+    opacity: .6;
+}
+.footer_content>p,.foot_sub>p{
+    font-weight: bold;
+    margin: 20px 0px 10px 10px;
+    color: white;
+}
+ul{
+    margin-top: 20px;
+    list-style-type: none;
+    color: white;
+}
+ul>li{
+    padding: 5px;
+}
+.contact{
+    display: flex;
+    padding: 0px;
+}
+.contact>li{
+    padding: 2px;
+}
+/*------------SLIDESHOW--------------*/
+.slides{
+    width: 100%;
+    height: 100%;
+}
+.slideshow{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slideshow>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in;
+}
+select option{
+    background-color: brown;
+}
+/*khi duoc hover, active doi mau nen*/
+.active:hover{
+    background-color: rgb(19, 97, 93);
+}
+@keyframes fade{
+    from{
+        opacity: .4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*-------------------------------------------------------*/
+.tabtitle.movie{
+    background: lime;
+}
+@keyframes faded{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.specialp_1{
+    position: relative;
+    right: 20%;
+}
+.specialp_2{
+    position: relative;
+    right: 8%;
+}
+.buy-ticket>button{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    box-shadow: 1px 0px 2px white;
+    margin: 10px 25px;
+}
+.buy-ticket>button:hover{
+    background-color: rgb(250, 164, 4);
+    opacity: 1;
+}
