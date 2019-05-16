@@ -31,8 +31,9 @@
                     <li><img src="../img/home-icon.png"></li>
                     <li class="menuitem"><i class="fas fa-camera-retro"></i><a href="#">Thế giới phim</a>
                         <ul class="submenu">
-                            <li><a href="#">Menu 1</a></li>
-                            <li class="sub_subitem"><a href="#">Menu 2</a>
+                            <li><a href="#">Phim Đang Chiếu</a></li>
+                            <li><a href="#">Phim Sắp Chiếu</a></li>
+                            <li class="sub_subitem"><a href="#">Phim Việt Nam<i class="fas fa-chevron-right"></i></a>
                                 <ul class="sub_submenu">
                                     <li><a  href="#">Menu 1</a></li>
                                     <li><a  href="#">Menu 2</a></li>
@@ -40,13 +41,18 @@
                                     <li><a  href="#">Menu 4</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Menu 3</a></li>
+                            <li><a href="#">Phim Dành Cho Trẻ em</a></li>
                         </ul>
                         <i class="fas fa-chevron-down"></i>
                     </li>
                     <li><i class="fas fa-file-image"></i><a href="#">Góc điện ảnh</a></li>
                     <li><i class="fas fa-bullhorn"></i><a href="#">Khuyến mãi</a></li>
-                    <li><i class="fas fa-address-book"></i><a href="#">Thành viên</a><i class="fas fa-chevron-down"></i></li>
+                    <li class="menuitem"><i class="fas fa-address-book"></i><a href="#">My Account<i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#"><i class="fas fa-user-circle"></i>Tên Đăng Nhập</a></li>
+                            <li><a href="#"><i class="fas fa-cogs"></i>Settings</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="information">
@@ -98,12 +104,12 @@
                     </div>
                     <div class="tabitem">
                         <div class="select">
-                            <select name="rap" id="rap">
-                                <option value="#">Chọn rạp</option>
-                                <option value="CGV Vincom">CGV Vincom</option>
-                                <option value="Parkson Đồng Khởi">Parkson Đồng Khởi</option>
-                                <option value="CGV Pandora City">CGV Pandora City</option>
-                                <option value="CGV Vạn Hạnh Mall">CGV Vạn Hạnh Mall</option>
+                            <select name="phim" id="phim">
+                                <option value="#">Chọn phim</option>
+                                <option value="Avengers Endgame">Avengers Endgame</option>
+                                <option value="Vì sao vụt sáng">Vì sao vụt sáng</option>
+                                <option value="The Lion King">The Lion King</option>
+                                <option value="Pokemon Detective Pikachu">Pokemon Detective Pikachu</option>
                             </select>
                         </div>
                         <div class="select">
@@ -116,21 +122,21 @@
                             </select>
                         </div>
                         <div class="select">
+                            <select name="rap" id="rap">
+                                <option value="#">Chọn rạp</option>
+                                <option value="CGV Vincom">CGV Vincom</option>
+                                <option value="Parkson Đồng Khởi">Parkson Đồng Khởi</option>
+                                <option value="CGV Pandora City">CGV Pandora City</option>
+                                <option value="CGV Vạn Hạnh Mall">CGV Vạn Hạnh Mall</option>
+                            </select>
+                        </div>
+                        <div class="select">
                             <select name="suat" id="suat">
                                 <option value="#">Chọn suất</option>
                                 <option value="10:30">10:30</option>
                                 <option value="11:45">11:45</option>
                                 <option value="1:30">1:30</option>
                                 <option value="2:30">2:30</option>
-                            </select>
-                        </div>
-                        <div class="select">
-                            <select name="phim" id="phim">
-                                <option value="#">Chọn phim</option>
-                                <option value="Avengers Endgame">Avengers Endgame</option>
-                                <option value="Vì sao vụt sáng">Vì sao vụt sáng</option>
-                                <option value="The Lion King">The Lion King</option>
-                                <option value="Pokemon Detective Pikachu">Pokemon Detective Pikachu</option>
                             </select>
                         </div>
                         <div class="btn">
@@ -245,7 +251,7 @@
             </div>
         </div>
         <div class="movie">
-            <div class="movie-item" style="font-weight: bold;"onclick="showmovie(0)">Phim Đang Chiếu</div>
+            <div class="movie-item chosen" style="font-weight: bold;"onclick="showmovie(0)">Phim Đang Chiếu</div>
             <div class="movie-item" style="font-weight: bold;"onclick="showmovie(1)">Phim Sắp Chiếu</div>
         </div>
         <script>
@@ -360,16 +366,199 @@
                 </div>
             </div>
         </div>
+        <div class="content2" display="none">
+            <div class="row" id="one">
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                        <img src="../img/1.jpg" alt="visaovutsang">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Vì sao vụt sáng</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                        <img src="../img/2.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Kế hoạch đổi chồng</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                            <img src="../img/3.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                            <p style="color: whitesmoke">Chân nhỏ bạn ở đâu</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                        <img src="../img/4.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Bào thai quỷ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="two">
+                <div class="box">
+                        <div class="light-layer">
+                                <div class="buy-ticket"><button>BUY TICKET</button></div>
+                            </div>
+                    <div class="buy-layer">
+                        <img src="../img/5.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Thiên thần công lý</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                        <img src="../img/6.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Đại chiến thành ẩn sĩ</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>
+                    <div class="buy-layer">
+                        <img src="../img/7.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Lời nhắn của oan hồn</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="light-layer">
+                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                    </div>                
+                    <div class="buy-layer">
+                        <img src="../img/8.jpg" alt="">
+                    </div>
+                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                        <p style="color: whitesmoke">Ngôi nhà có chiếc đồng hồ ma thuật</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="content3">
             <div class="comment">
                 <div class="coms">
                     <div class="text">
-                        <p style="font-weight: bold; font-size: 20px; color: white">Góc Bình Luận</p>
+                        <p style="font-weight: bold; font-size: 18px; color: white">Góc Bình Luận</p>
                     </div>
-                    <div class="textbox"></div>
-                    <div class="textbox"></div>
+                    <div class="textbox">
+                        <div class="child-textbox">
+                            <img src="../img/entry01.jpg" alt="phim01">
+                        </div>
+                        <div class="child-textbox">
+                            <div class="cont-textbox">
+                                <p>[Review] Bad Times At The EL Royale: Trải nghiệm Kinh Hoàng Ở Khách Sạn Hạng Sang</p>
+                            </div>
+                            <div class="cont-textbox">
+                                <div class="buttons">
+                                    <button><i class="far fa-thumbs-up"></i>Thích 17</button>
+                                </div>
+                                <div class="buttons">
+                                    <button><i class="fas fa-users"></i>3409</button>
+                                </div>
+                                <span style="color: white;"><i class="fas fa-star" style="color: yellow"></i>5</span>
+                            </div>
+                            <div class="cont-textbox">
+                                <p>Kể cả khi chiếc quần sắp tụt và mấy múi cơ bụng "thần thánh" của Chris Hemsworth không đủ hấp dẫn bạn, <b>Bad Times At The EI Royale</b>
+                                vẫn là một bộ <i>phim hay</i> đáng xem</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <div class="child-textbox">
+                            <img src="../img/entry02.jpg" alt="phim02">
+                        </div>
+                        <div class="child-textbox">
+                            <div class="cont-textbox">
+                                <p>[Review] Người Bất Tử: Có Qúa Nhiều Điều Để Khen Ngợi</p>
+                            </div>
+                            <div class="cont-textbox">
+                                <div class="buttons">
+                                    <button><i class="far fa-thumbs-up"></i>Thích 17</button>
+                                </div>
+                                <div class="buttons">
+                                    <button><i class="fas fa-users"></i>3409</button>
+                                </div>
+                                <span style="color: white;"><i class="fas fa-star" style="color: yellow"></i>5</span>
+                            </div>
+                            <div class="cont-textbox">
+                                <p>Qủa không bõ công mong chờ, Người Bất tử của đạo diễn Victor Vũ thực sự là một bộ phim Việt hay nhất trong năm 2018 tính đến thời điểm hiện tại.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="coms"></div>
+                <div class="coms">
+                    <div class="text">
+                        <p style="font-weight: bold; font-size: 18px; color: white">Điện Ảnh</p>
+                    </div>
+                    <div class="textbox">
+                        <div class="child-textbox">
+                            <img src="../img/blog01.jpg" alt="phim01">
+                        </div>
+                        <div class="child-textbox">
+                            <div class="cont-textbox">
+                                <p>Học Địa Lý Nước Mỹ Bằng Phim Kinh Dị - Phần 1</p>
+                            </div>
+                            <div class="cont-textbox">
+                                <div class="buttons">
+                                    <button><i class="far fa-thumbs-up"></i>Thích 17</button>
+                                </div>
+                                <div class="buttons">
+                                    <button><i class="fas fa-users"></i>3409</button>
+                                </div>
+                            </div>
+                            <div class="cont-textbox">
+                                <p>Vừa xem các bộ phim kinh dị nổi tiếng vừa biết thêm về các bang của nước Mỹ. Một công đôi việc nhé!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <div class="child-textbox">
+                            <img src="../img/blog02.jpg" alt="phim02">
+                        </div>
+                        <div class="child-textbox">
+                            <div class="cont-textbox">
+                                <p>14 Rạp Chiếu Phim Mà Bạn Nên Ghé Qua Một Lần Trong Đời</p>
+                            </div>
+                            <div class="cont-textbox">
+                                <div class="buttons">
+                                    <button><i class="far fa-thumbs-up"></i>Thích 17</button>
+                                </div>
+                                <div class="buttons">
+                                    <button><i class="fas fa-users"></i>3409</button>
+                                </div>
+                            </div>
+                            <div class="cont-textbox">
+                                <p>14 rạp chiếu phim trong danh sách dưới đây chắc chắn sẽ khiến bạn thay đổi khái niệm hoàn toàn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="footer">
                 <div class="footer_content">
@@ -404,9 +593,9 @@
                         <p>LIÊN KẾT</p>
                         <ul class="contact">
                             <li><i class="fab fa-facebook"></i></li>
-                            <li><i class="fab fa-facebook"></i></li>
-                            <li><i class="fab fa-facebook"></i></li>
-                            <li><i class="fab fa-facebook"></i></li>
+                            <li><i class="fab fa-reddit-square"></i></li>
+                            <li><i class="fab fa-twitter-square"></i></li>
+                            <li><i class="fab fa-google-plus-square"></i></li>
                         </ul>
                     </div>
                     <div class="foot_sub">
