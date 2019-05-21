@@ -3,6 +3,9 @@
     margin: 0px;
     font-family: sans-serif;
 }
+html,body{
+    position: relative;
+}
 i{
     color: white;
     padding: 0px 5px;
@@ -20,6 +23,26 @@ img{
     justify-content: center;
     align-items: flex-start;
     position: relative;
+}
+/*------------LAYER OPACITY---------------------*/
+.opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .5;
+    top: 0;
+    z-index: 30;
+}
+canvas{
+    display:block;
+    margin: 0 auto;
+    /*background: lightcoral;*/
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
 }
 /*----------------THANH NAVBAR----------------*/
 .navbar{
@@ -206,6 +229,25 @@ a{
    box-shadow: 1px 0px 2px white;
    float: right;
    margin: 10px 25px;
+}
+svg{
+    display:block;
+    margin: 0 auto;
+    float: right;
+    margin: 10px 15px;
+    box-shadow: 2px 0px 6px white;
+    border-radius: 5px;
+}
+svg.ahihi{
+    background:#1d8ece;
+    box-shadow: none;
+    margin-right: 0px;
+}
+svg.ahuhu{
+    background:#dadada;
+    box-shadow: none;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 /*-------CONTENT THỨ NHẤT CHỨA 2 CONTENT NHỎ GỒM CONTENT 5 ẢNH VÀ 3 ẢNH--------------*/
 .content1{
@@ -470,8 +512,21 @@ h2{
 }
 .buttons{
     margin: 0px 5px;
+    position: relative;
 }
-.buttons>button{
+.buttons>.far.fa-thumbs-up
+{
+    position: absolute;
+    left: 15%;
+    top: 32%;
+}
+.buttons>.fas.fa-users{
+    position: absolute;
+    left: 8%;
+    top: 32%;
+    color: black;
+}
+/*.buttons>button{
     width: 90px;
     height: 30px;
     background: #1d8ece;
@@ -480,7 +535,7 @@ h2{
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-}
+}*/
 .buttons:nth-child(1)>button{
     color: whitesmoke;
 }
@@ -583,7 +638,7 @@ select option{
     position: relative;
     right: 8%;
 }
-.buy-ticket>button{
+/*.buy-ticket>button{
     width: 100px;
     height: 40px;
     cursor: pointer;
@@ -594,8 +649,8 @@ select option{
     color: white;
     box-shadow: 1px 0px 2px white;
     margin: 10px 25px;
-}
-.buy-ticket>button:hover{
+}*/
+.buy-ticket>svg:hover{
     background-color: rgb(250, 164, 4);
     opacity: 1;
 }
