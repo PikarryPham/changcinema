@@ -13,6 +13,10 @@
     <title>DEMO 16</title>
 </head>
 <body>
+    <canvas id="loading" width="300" height="300"></canvas>
+    <div class="opacity">
+    </div>
+    <script src="../javascript/canvas.js"></script>
     <div class="container">
         <div class="top">
             <div class="slideshow">
@@ -99,7 +103,10 @@
                             </select>
                         </div>
                         <div class="btn">
-                            <button type="submit">$ Mua vé</button>
+                            <!--<button type="submit">$ Mua vé</button>-->
+                            <svg width="90", height="40">
+                                <text x="15" y="25" fill="white">$Mua vé</text>
+                            </svg>
                         </div>
                     </div>
                     <div class="tabitem">
@@ -140,7 +147,10 @@
                             </select>
                         </div>
                         <div class="btn">
-                            <button type="submit">$ Mua vé</button>
+                            <!--<button type="submit">$ Mua vé</button>-->
+                            <svg width="90", height="40">
+                                <text x="15" y="25" fill="white">$Mua vé</text>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -276,7 +286,11 @@
             <div class="row" id="one">
                 <div class="box">
                     <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                        <div class="buy-ticket">
+                            <svg width="100", height="40">
+                                <text x="15" y="25" fill="white">Buy Ticket</text>
+                            </svg>
+                        </div>
                     </div>
                     <div class="buy-layer">
                         <img src="../img/1.jpg" alt="visaovutsang">
@@ -287,7 +301,11 @@
                 </div>
                 <div class="box">
                     <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                        <div class="buy-ticket">
+                            <svg width="100", height="40">
+                                <text x="15" y="25" fill="white">Buy Ticket</text>
+                            </svg>
+                        </div>
                     </div>
                     <div class="buy-layer">
                         <img src="../img/2.jpg" alt="">
@@ -298,7 +316,11 @@
                 </div>
                 <div class="box">
                     <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                        <div class="buy-ticket">
+                            <svg width="100", height="40">
+                                <text x="15" y="25" fill="white">Buy Ticket</text>
+                            </svg>
+                        </div>
                     </div>
                     <div class="buy-layer">
                             <img src="../img/3.jpg" alt="">
@@ -309,7 +331,11 @@
                 </div>
                 <div class="box">
                     <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                        <div class="buy-ticket">
+                            <svg width="100", height="40">
+                                <text x="15" y="25" fill="white">Buy Ticket</text>
+                            </svg>
+                        </div>
                     </div>
                     <div class="buy-layer">
                         <img src="../img/4.jpg" alt="">
@@ -322,7 +348,11 @@
             <div class="row" id="two">
                 <div class="box">
                         <div class="light-layer">
-                                <div class="buy-ticket"><button>BUY TICKET</button></div>
+                                <div class="buy-ticket">
+                                    <svg width="100", height="40">
+                                        <text x="15" y="25" fill="white">Buy Ticket</text>
+                                    </svg>
+                                </div>
                             </div>
                     <div class="buy-layer">
                         <img src="../img/5.jpg" alt="">
@@ -333,7 +363,11 @@
                 </div>
                 <div class="box">
                     <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                        <div class="buy-ticket">
+                            <svg width="100", height="40">
+                                <text x="15" y="25" fill="white">Buy Ticket</text>
+                            </svg>
+                        </div>
                     </div>
                     <div class="buy-layer">
                         <img src="../img/6.jpg" alt="">
@@ -344,7 +378,11 @@
                 </div>
                 <div class="box">
                     <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                        <div class="buy-ticket">
+                            <svg width="100", height="40">
+                                <text x="15" y="25" fill="white">Buy Ticket</text>
+                            </svg>
+                        </div>
                     </div>
                     <div class="buy-layer">
                         <img src="../img/7.jpg" alt="">
@@ -355,7 +393,11 @@
                 </div>
                 <div class="box">
                     <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
+                        <div class="buy-ticket">
+                            <svg width="100", height="40">
+                                <text x="15" y="25" fill="white">Buy Ticket</text>
+                            </svg>
+                        </div>
                     </div>                
                     <div class="buy-layer">
                         <img src="../img/8.jpg" alt="">
@@ -367,97 +409,130 @@
             </div>
         </div>
         <div class="content2" display="none">
-            <div class="row" id="one">
-                <div class="box">
-                    <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
-                    </div>
-                    <div class="buy-layer">
-                        <img src="../img/1.jpg" alt="visaovutsang">
-                    </div>
-                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
-                        <p style="color: whitesmoke">Vì sao vụt sáng</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
-                    </div>
-                    <div class="buy-layer">
-                        <img src="../img/2.jpg" alt="">
-                    </div>
-                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
-                        <p style="color: whitesmoke">Kế hoạch đổi chồng</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
-                    </div>
-                    <div class="buy-layer">
-                            <img src="../img/3.jpg" alt="">
-                    </div>
-                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
-                            <p style="color: whitesmoke">Chân nhỏ bạn ở đâu</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
-                    </div>
-                    <div class="buy-layer">
-                        <img src="../img/4.jpg" alt="">
-                    </div>
-                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
-                        <p style="color: whitesmoke">Bào thai quỷ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="two">
-                <div class="box">
-                        <div class="light-layer">
-                                <div class="buy-ticket"><button>BUY TICKET</button></div>
+                <div class="row" id="one">
+                        <div class="box">
+                            <div class="light-layer">
+                                <div class="buy-ticket">
+                                    <svg width="100", height="40">
+                                        <text x="15" y="25" fill="white">Buy Ticket</text>
+                                    </svg>
+                                </div>
                             </div>
-                    <div class="buy-layer">
-                        <img src="../img/5.jpg" alt="">
+                            <div class="buy-layer">
+                                <img src="../img/1.jpg" alt="visaovutsang">
+                            </div>
+                            <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                                <p style="color: whitesmoke">Vì sao vụt sáng</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="light-layer">
+                                <div class="buy-ticket">
+                                    <svg width="100", height="40">
+                                        <text x="15" y="25" fill="white">Buy Ticket</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="buy-layer">
+                                <img src="../img/2.jpg" alt="">
+                            </div>
+                            <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                                <p style="color: whitesmoke">Kế hoạch đổi chồng</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="light-layer">
+                                <div class="buy-ticket">
+                                    <svg width="100", height="40">
+                                        <text x="15" y="25" fill="white">Buy Ticket</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="buy-layer">
+                                    <img src="../img/3.jpg" alt="">
+                            </div>
+                            <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                                    <p style="color: whitesmoke">Chân nhỏ bạn ở đâu</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="light-layer">
+                                <div class="buy-ticket">
+                                    <svg width="100", height="40">
+                                        <text x="15" y="25" fill="white">Buy Ticket</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="buy-layer">
+                                <img src="../img/4.jpg" alt="">
+                            </div>
+                            <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                                <p style="color: whitesmoke">Bào thai quỷ</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
-                        <p style="color: whitesmoke">Thiên thần công lý</p>
+                    <div class="row" id="two">
+                        <div class="box">
+                                <div class="light-layer">
+                                        <div class="buy-ticket">
+                                            <svg width="100", height="40">
+                                                <text x="15" y="25" fill="white">Buy Ticket</text>
+                                            </svg>
+                                        </div>
+                                    </div>
+                            <div class="buy-layer">
+                                <img src="../img/5.jpg" alt="">
+                            </div>
+                            <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                                <p style="color: whitesmoke">Thiên thần công lý</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="light-layer">
+                                <div class="buy-ticket">
+                                    <svg width="100", height="40">
+                                        <text x="15" y="25" fill="white">Buy Ticket</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="buy-layer">
+                                <img src="../img/6.jpg" alt="">
+                            </div>
+                            <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                                <p style="color: whitesmoke">Đại chiến thành ẩn sĩ</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="light-layer">
+                                <div class="buy-ticket">
+                                    <svg width="100", height="40">
+                                        <text x="15" y="25" fill="white">Buy Ticket</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="buy-layer">
+                                <img src="../img/7.jpg" alt="">
+                            </div>
+                            <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                                <p style="color: whitesmoke">Lời nhắn của oan hồn</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="light-layer">
+                                <div class="buy-ticket">
+                                    <svg width="100", height="40">
+                                        <text x="15" y="25" fill="white">Buy Ticket</text>
+                                    </svg>
+                                </div>
+                            </div>                
+                            <div class="buy-layer">
+                                <img src="../img/8.jpg" alt="">
+                            </div>
+                            <div class="inform" style="display:flex; justify-content:center; align-items: center">
+                                <p style="color: whitesmoke">Ngôi nhà có chiếc đồng hồ ma thuật</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
-                    </div>
-                    <div class="buy-layer">
-                        <img src="../img/6.jpg" alt="">
-                    </div>
-                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
-                        <p style="color: whitesmoke">Đại chiến thành ẩn sĩ</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
-                    </div>
-                    <div class="buy-layer">
-                        <img src="../img/7.jpg" alt="">
-                    </div>
-                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
-                        <p style="color: whitesmoke">Lời nhắn của oan hồn</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="light-layer">
-                        <div class="buy-ticket"><button>BUY TICKET</button></div>
-                    </div>                
-                    <div class="buy-layer">
-                        <img src="../img/8.jpg" alt="">
-                    </div>
-                    <div class="inform" style="display:flex; justify-content:center; align-items: center">
-                        <p style="color: whitesmoke">Ngôi nhà có chiếc đồng hồ ma thuật</p>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="content3">
@@ -476,10 +551,17 @@
                             </div>
                             <div class="cont-textbox">
                                 <div class="buttons">
-                                    <button><i class="far fa-thumbs-up"></i>Thích 17</button>
+                                    <i class="far fa-thumbs-up"></i>
+                                    <svg class="ahihi" width="100", height="30">
+                                        <text x="25" y="20" fill="white">Thích 17</text>
+                                    </svg>
+                                    <!--<button><i class="far fa-thumbs-up"></i>Thích 17</button>-->
                                 </div>
                                 <div class="buttons">
-                                    <button><i class="fas fa-users"></i>3409</button>
+                                        <i class="fas fa-users"></i>
+                                        <svg class="ahuhu" width="80", height="30">
+                                            <text x="35" y="20" fill="black">3409</text>
+                                        </svg>
                                 </div>
                                 <span style="color: white;"><i class="fas fa-star" style="color: yellow"></i>5</span>
                             </div>
@@ -499,10 +581,16 @@
                             </div>
                             <div class="cont-textbox">
                                 <div class="buttons">
-                                    <button><i class="far fa-thumbs-up"></i>Thích 17</button>
+                                        <i class="far fa-thumbs-up"></i>
+                                        <svg class="ahihi" width="100", height="30">
+                                            <text x="25" y="20" fill="white">Thích 17</text>
+                                        </svg>
                                 </div>
                                 <div class="buttons">
-                                    <button><i class="fas fa-users"></i>3409</button>
+                                        <i class="fas fa-users"></i>
+                                        <svg class="ahuhu" width="80", height="30">
+                                            <text x="35" y="20" fill="black">3409</text>
+                                        </svg>
                                 </div>
                                 <span style="color: white;"><i class="fas fa-star" style="color: yellow"></i>5</span>
                             </div>
@@ -526,10 +614,16 @@
                             </div>
                             <div class="cont-textbox">
                                 <div class="buttons">
-                                    <button><i class="far fa-thumbs-up"></i>Thích 17</button>
+                                    <i class="far fa-thumbs-up"></i>
+                                    <svg class="ahihi" width="100", height="30">
+                                        <text x="25" y="20" fill="white">Thích 17</text>
+                                    </svg>
                                 </div>
                                 <div class="buttons">
-                                    <button><i class="fas fa-users"></i>3409</button>
+                                        <i class="fas fa-users"></i>
+                                        <svg class="ahuhu" width="80", height="30">
+                                            <text x="35" y="20" fill="black">3409</text>
+                                        </svg>
                                 </div>
                             </div>
                             <div class="cont-textbox">
@@ -547,10 +641,17 @@
                             </div>
                             <div class="cont-textbox">
                                 <div class="buttons">
-                                    <button><i class="far fa-thumbs-up"></i>Thích 17</button>
+                                    <i class="far fa-thumbs-up"></i>
+                                    <svg class="ahihi" width="100", height="30">
+                                        <text x="25" y="20" fill="white">Thích 17</text>
+                                    </svg>
                                 </div>
                                 <div class="buttons">
-                                    <button><i class="fas fa-users"></i>3409</button>
+                                    <i class="fas fa-users"></i>
+                                    <!--<button><i class="fas fa-users"></i>3409</button>-->
+                                    <svg class="ahuhu" width="80", height="30">
+                                        <text x="35" y="20" fill="black">3409</text>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="cont-textbox">
