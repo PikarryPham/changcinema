@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/demo16.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../javascript/slideshow.js">
+    <link rel="shortcut icon" href="/img/home-icon.png">
+    <title>Canvas Demo</title>
+</head>
+<style>
+    html,body{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background: black;
+    }
+    canvas{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: black;
+    }
+    img{
+        width: 100px;
+        height: 50px;
+    }
+    .water {
+        width: 200px;
+        height: 200px;
+        border: 5px solid white;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 5px;
+        border-radius: 50%;
+        /*border-top: 5px solid transparent;*/
+        background-image: url("../img/wave.png");
+        background-position: 0px 250px;
+        background-repeat: repeat-x;
+        animation: animate 12s linear infinite;
+        box-shadow: 0 0 0 10px lightcoral;
+    }
+    @keyframes animate {
+    50% {background-position: -2000px 0px;}
+    100% {background-position: 3000px -210px;}
+    }
+    .water>p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 45%;
+    }
+</style>
+<body>
+    <!--<canvas id="canvas" width="500" height="400"></canvas>-->
+    
+    <div class="water" id="water">
+        <p id="text"></p>
+    </div>
+    <script>
+        var text = document.getElementById("text");
+        var water = document.getElementById("water");
+        console.log(water);
+        var count = 0;
+        function time(){
+             if(count == 100)
+            {
+                 clearInterval(setting);
+             }
+             text.innerHTML = count + "%";
+             count  = count + 10;
+             text.style.color = "white";
+         }
+        var setting = setInterval(time,700);
+    </script>
+    </body>
+</html>

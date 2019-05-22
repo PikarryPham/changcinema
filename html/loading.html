@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/demo16.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Loading</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        html,body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            position: relative;
+        }
+        .container{
+            background: brown;
+            position: absolute;
+            width: 30vw;
+            height: 50vh;
+            top: 50%;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-50%, -50%);
+        }
+        #mot, #hai, #ba, #bon{
+            width: 25px;
+            height: 50px;
+            background-color:  #ffbbee;
+            display: block;
+        }
+        ul{
+            display: flex;
+            padding: 0px;
+            transform: rotate(180deg);
+            /*animation: animate 5s infinite;*/
+        }
+        #mot{
+            height: 40px;
+            background: #ff3377;
+            /*animation: animate1 3s ease-in-out infinite;*/
+        }
+        #hai{
+            height: 60px;
+            background: #ff5588;
+            /*animation: animate2 3s ease-in-out infinite;*/
+        }
+        #ba{
+            height: 80px;
+            background: #ff77aa;
+            /*animation: animate3 3s ease-in-out infinite;*/
+        }
+        #bon{
+            height: 100px;
+            /*animation: animate4 3s ease-in-out infinite;*/
+        }
+        .circle{
+            position: relative;
+            margin: 10px 5px;
+            bottom: 16%;
+            right: -8%;
+            animation: x 2s ease-in-out infinite 1s both;
+        }
+        .circle>div{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: red;
+            animation: y 2s ease-in-out infinite 1s both;
+            /*animation: pump 2s ease-in infinite;*/
+        }
+        @keyframes x{
+            from{
+                
+            }
+            to{
+
+            }
+        }
+        /*ul:hover #mot{
+            height: 80px;
+        }
+        ul:hover #hai{
+            height: 70px;
+        }
+        ul:hover #ba{
+            height: 60px;
+        }
+        ul:hover #bon{
+            height: 50px;
+        }*/
+        @keyframes animate1{
+            from{
+                height: 40px;
+            }
+            to{
+                height: 100px;
+            }
+        }
+        @keyframes animate2{
+            from{
+                height: 60px;
+            }
+            to{
+                height: 80px;
+            }
+        }
+        @keyframes animate3{
+            from{
+                height: 80px;
+            }
+            to{
+                height: 60px;
+            }
+        }
+        @keyframes animate4{
+            from{
+                height: 100px;
+            }
+            to{
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            <div></div>
+        </div>
+        <ul>
+            <li><span id="mot"></span></li>
+            <li><span id="hai"></span></li>
+            <li><span id="ba"></span></li>
+            <li><span id="bon"></span></li>
+        </ul>
+    </div>
+</body>
+</html>
