@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0 auto;
+    position: relative;
+}
+.container-fluid{
+    width: 100vw;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr;
+}
+.content:nth-child(1)
+{
+    background-color: #dadada;
+    display: grid;
+    grid-template-rows: 0.3fr 1.85fr 2fr;
+}
+nav,.navbar{
+    background-color: #17a2b8;
+}
+.content:nth-child(1)>.information:nth-child(2)
+{
+    background: black;
+    background-image:url("../img/pet.jpg");
+    background-size: cover;
+    vertical-align: middle;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.information:nth-child(3){
+    display: grid;
+    grid-template-rows: 2fr 0.5fr;
+}
+.feature:nth-child(1)
+{
+    background-color: #17a2b8;
+}
+.content:nth-child(2)
+{
+    background-color: lightslategray;
+    display: grid;
+    grid-template-rows: 57.83px 400px auto;
+}
+.content:nth-child(2)>.book-ticket:nth-child(odd)
+{
+    background-image: url("../img/movie-details-bg.jpg");
+}
+.navbar>ul{
+    padding: 0px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.dropdown-menu.show{
+    position: absolute;
+    top: 91%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+}
+.navbar>ul>li{
+    padding-left: 0px;
+}
+.navbar>ul>li>a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+.infor{
+    background: #eeecec;
+    opacity: .6;
+    width: 100%;
+    height: 20%;
+    align-self: flex-end;
+}
+.infor>.special-p{
+    font-family: 'Staatliches', cursive;
+    font-size: 3em;
+    color: black;
+    margin-left: 10px;
+}
+.text{
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    opacity: .5;
+    display: flex;
+    align-self: flex-start;
+}
+.text p{
+    color: white;
+    margin-left: 20px;
+}
+.text p:nth-child(1) {
+    transform:translateX(-100%);
+}
+.text p:nth-child(2){
+    transform: translateX(380%);
+    margin-left: 20px;
+}
+.text p:nth-child(1) {
+    animation: down-one 3.5s infinite;
+}
+.text p:nth-child(2) {
+    animation: down-two 3.5s infinite ;
+    position: relative;
+}
+@keyframes down-one {
+    0%  {
+        transform:translateX(-200%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+@keyframes down-two {
+    0%  {
+        transform:translateX(260%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+.feature:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(248, 180, 248),#005EFF,#009AFF,#60BAAE);
+}
+.payment{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 7px 9px 16px -4px rgb(73, 71, 73);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    color: #913888;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon:nth-child(1)
+{
+    border-right: 2px solid #8608cfb9;
+}
+.icon>h4{
+    cursor: pointer!important;
+}
+.icon>i{
+    font-size: 1.6rem;
+}
+/*-----------------SLIDERSHOW--------------*/
+.slider{
+    width: 100%;
+    height: 85%;
+    background-color: black;
+}
+.carousel-item.active,
+.carousel-item
+{
+    width: 100%;
+    height: 100%;
+}
+.d-flex.w-100,
+#carouselExampleControls
+{
+    width: 100%;
+    height: 100%;
+}
+.d-flex.w-100
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.booking{
+    border-radius: 5px;
+    height: 80%;
+    width: 80%;
+    background-color: #60BAAE;
+    background-image: url("../img/movie-details-bg.jpg");
+    background-position: top;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    opacity: .7;
+}
+.child-booking:nth-child(1)
+{
+    background-color: #dadada;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+/*---------------------content trong slider=------------------*/
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time>i{
+    font-size: 2rem;
+}
+.time:nth-child(1)
+{
+    border-bottom: 1px solid black;
+}
+.child-booking:nth-child(2){
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.sub-booking{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn.btn-light{
+    font-size: 1.25rem;
+    box-shadow: 7px 9px 16px -4px rgb(73, 71, 73,0.55);
+}
+/*---------------------NOI DUNG BEN TRAI--------------------*/
+.book-ticket:nth-child(odd){
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.child-bookticket:nth-child(1)
+{
+    background: #913888;
+}
+.child-bookticket:nth-child(2){
+    text-align: center;
+}
+/*----------------CUSTOM BUTTON-------------------*/
+.sub-subbook .btn.btn-primary{
+    width: 65%;
+    height: 45px;
+    font-size: 20px;
+    color: white;
+}
+.input-group.mb-3
+{
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+.carousel-inner{
+    height: 100%;
+}
+/*--------------------NOTIFICATION--------------*/
+.notification{
+    position: absolute;
+    background: rgb(1, 184, 83);
+    width: 450px;
+    height: 50px;
+    top: 10%;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px; 
+    z-index: 10;
+    opacity: 0 ;
+    display: none;
+}
+.activated{
+    display: flex;
+    opacity: 1;
+    animation: faded 1s;
+}
+.notification>h4{
+    margin-bottom: 0px;
+}
+@keyframes faded{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: white!important;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: rgba(34, 32, 32, 0.911)!important;
+    border: 0;
+}
+.dropdown-menu.show {
+    background-color: rgba(34, 32, 32, 0.911)!important;    
+}
+.dropdown-item:hover{
+    background: #17a2b8!important;
+}
+.texting>p{
+    font-weight: bold;
+}
+.logo{
+    margin-top: 15px;
+    color :white;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+/*----------------CUSTOM PHAN DAT VE----------------*/
+.book-ticket:nth-child(even){
+    display: grid;
+    grid-template-rows: 50px auto;
+    grid-template-columns: 50px auto;
+}
+.sub-ticket:nth-child(1)
+{
+    background-color: lightsalmon;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+}
+#numbers>.number{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#numbers>.number>p{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.number:nth-child(even)
+{
+    background-color: orange;
+}
+/*----------------CUSTOM PHAN DAT VE (CNT)----------*/
+.sub-ticket:nth-child(2){
+    /*background-color: lightskyblue;*/
+    grid-row-start:1;
+    grid-row-end:3;
+    display: grid;
+}
+.sub-ticket:nth-child(3){
+    background-color: #fafafa;
+}
+.sub-ticket:nth-child(2)>.alphabet{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alphabet:nth-child(odd)
+{
+    background-color: grey;
+}
+.alphabet>p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+/*--------------CUSTOM PHAN SEAT CUA DAT VE------------*/
+.sub-ticket:nth-child(3){
+    display: grid;
+}
+.book-seat{
+    width: 700px;
+    background-color: rgba(255, 0, 0, 0.521);
+    height: 250px;
+    margin-left:50px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(14,50px);
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    /*grid-gap: 10px;*/
+}
+.seat:nth-child(odd)
+{
+    background-color: blueviolet;
+}
+.seat:nth-child(even){
+    background-color: wheat;
+}
+.seat-choose{
+    background-color: brown;
+    position: relative;
+}
+.seat-choose::before{
+    content: 'X';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%);
+}
