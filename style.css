@@ -1,0 +1,21 @@
+body {
+  background: lightcoral;
+}
+.container {
+  width: 50px;
+  height: 110px;
+  background: lightblue;
+  color: black;
+}
+.cha {
+  background: lightcoral;
+}
+.cha .con {
+  background: yellow;
+}
+.cha .con .chau {
+  background: black;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.16);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+$primary-color: lightcoral;
+$secondary-color: black;
+$dobong: 0 0 25px rgba(0,0,0,0.16);
+$size: 50px;
+body{
+    background: $primary-color;
+}
+//extend gom nhom cac class co chung thuoc tinh vs nhau
+//nhung include thi khong
+//
+
+.container
+{
+    width: $size;
+    height: $size + 10px + 50px;
+    background: lightblue;
+    color: black;
+}
+.cha{
+    background:$primary-color;
+    .con{
+        background: yellow;
+        .chau{
+            background: $secondary-color;
+            box-shadow: $dobong;
+        }
+    }
+}
