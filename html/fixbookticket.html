@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous">
+    </script>
+    <!--<script src="../javascript/notify.min (1).js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+  <body>
+    <div class="notification" id="noti">
+      <h4>Checkout Successfully!<i class="fas fa-check-circle" style="margin-left: 10px;"></i></h4>
+    </div>
+    <section class="container-fluid">
+        <div class="row" id="mot">
+            <div class="col-lg" style="background: black;" id="nav">
+                <span class="logo">film W<i class="fas fa-globe-europe"></i>RLD</span>
+                <ul class="menu">
+                    <li><img style="width: 25px; height: 25px" src="../img/home-icon.png"></li>
+                    <li class="menuitem"><i class="fas fa-camera-retro"></i><a href="#">Thế giới phim</a>
+                        <ul class="submenu" id="submenu01">
+                            <li><a href="../html/bookticket.html" target="blank">Phim Đang Chiếu</a></li>
+                            <li><a href="#">Phim Sắp Chiếu</a></li>
+                            <li class="sub_subitem"><a href="#">Phim Việt Nam<i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub_submenu">
+                                    <li><a  href="#">Menu 1</a></li>
+                                    <li><a  href="#">Menu 2</a></li>
+                                    <li><a  href="#">Menu 3</a></li>
+                                    <li><a  href="#">Menu 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Phim Dành Cho Trẻ em</a></li>
+                        </ul>
+                        <i class="fas fa-chevron-down"></i>
+                    </li>
+                    <li><i class="fas fa-file-image"></i><a href="#">Góc điện ảnh</a></li>
+                    <li><i class="fas fa-bullhorn"></i><a href="#">Khuyến mãi</a></li>
+                    <li class="menuitem"><i class="fas fa-address-book"></i><a href="#">My Account<i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu" id="submenu02">
+                            <li><a href="../html/admin.html" target="blank"><i class="fas fa-user-circle"></i>Tên Đăng Nhập</a></li>
+                            <li><a href="#"><i class="fas fa-cogs"></i>Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" id="hai">
+            <div class="col-lg-6" id="content1">
+                <div class="information">
+                    <div class="text">
+                        <p>Action/Fantasy/Adventure</p>
+                        <p>June 01,2019</p>
+                    </div>
+                    <div class="infor">
+                        <p class="special-p">The Secret Life Of The Pets 2</p>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="feature">
+                        <div class="choose">
+                            <h3 style="margin-left: 10px;">BOOKING</h3>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <!--Slider Chon Suat Ghe-->
+              <div class="slider">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleControls" data-slide-to="0" class="active">
+                        <p>Monday</p>
+                      </li>
+                      <li data-target="#carouselExampleControls" data-slide-to="1">
+                        <p>Tuesday</p>
+                      </li>
+                      <li data-target="#carouselExampleControls" data-slide-to="2">
+                        <p>Sunday</p>
+                      </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="d-flex w-100" style="background: #212529">
+                            <h4 style="color: white">Monday</h4>
+                            <div class="booking">
+                                <div class="child-booking">
+                                  <div class="time" style="color: rgb(255, 124, 17);"><i class="fas fa-sun"></i></div>
+                                  <div class="time" style="color: #913888"><i class="fas fa-cloud-moon"></i></div>
+                                </div>
+                                <div class="child-booking">
+                                  <div class="sub-booking">
+                                    <button type="button" class="btn btn-light">11:30</button>
+                                    <button type="button" class="btn btn-light">12:45</button>
+                                    <button type="button" class="btn btn-light">1:00</button>
+                                    <button type="button" class="btn btn-light">1:30</button>
+                                  </div>
+                                  <div class="sub-booking">
+                                    <button type="button" class="btn btn-light">15:40</button>
+                                    <button type="button" class="btn btn-light">17:50</button>
+                                    <button type="button" class="btn btn-light">18:30</button>
+                                    <button type="button" class="btn btn-light">21:00</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item" style="background: #212529">
+                          <div class="d-flex w-100">
+                            <h4 style="color: white">Tuesday</h4>
+                            <div class="booking">
+                              <div class="child-booking">
+                                <div class="time" style="color: rgb(255, 124, 17);"><i class="fas fa-sun"></i></div>
+                                <div class="time" style="color: #913888"><i class="fas fa-cloud-moon"></i></div>
+                              </div>
+                              <div class="child-booking">
+                                <div class="sub-booking">
+                                  <button type="button" class="btn btn-light">9:30</button>
+                                  <button type="button" class="btn btn-light">10:45</button>
+                                  <button type="button" class="btn btn-light">12:00</button>
+                                  <button type="button" class="btn btn-light">1:15</button>
+                                </div>
+                                <div class="sub-booking">
+                                  <button type="button" class="btn btn-light">15:00</button>
+                                  <button type="button" class="btn btn-light">16:50</button>
+                                  <button type="button" class="btn btn-light">18:10</button>
+                                  <button type="button" class="btn btn-light">22:00</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item" style="background: #212529">
+                          <div class="d-flex w-100">
+                            <h4 style="color: white">Sunday</h4>
+                            <div class="booking">
+                                <div class="child-booking">
+                                  <div class="time" style="color: rgb(255, 124, 17);"><i class="fas fa-sun"></i></div>
+                                  <div class="time" style="color: #913888"><i class="fas fa-cloud-moon"></i></div>
+                                </div>
+                                <div class="child-booking">
+                                  <div class="sub-booking">
+                                    <button type="button" class="btn btn-light">9:30</button>
+                                    <button type="button" class="btn btn-light">10:45</button>
+                                    <button type="button" class="btn btn-light">12:00</button>
+                                    <button type="button" class="btn btn-light">1:15</button>
+                                  </div>
+                                  <div class="sub-booking">
+                                    <button type="button" class="btn btn-light">15:00</button>
+                                    <button type="button" class="btn btn-light">16:50</button>
+                                    <button type="button" class="btn btn-light">18:10</button>
+                                    <button type="button" class="btn btn-light">22:00</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+              </div>
+                    </div>
+                    <div class="feature">
+                      <div class="payment">
+                        <div class="icon">
+                          <i class="fas fa-clipboard-list" style="color: #913888"></i><h4>Payment</h4>
+                        </div>
+                        <div class="icon">
+                          <i class="fab fa-paypal" style="color: #913888"></i><h4>Synposis</h4>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" id="content2">
+                <div class="book-ticket">
+                  
+                </div>
+                <div class="book-ticket">
+                  <div class="child-bookticket">
+                    <h3 style="margin-left: 20px;">Ticket Info</h3>
+                    <p  style="margin-left: 20px;"><b></b>Total:<p id="total"></p></p>
+                    <p  style="margin-left: 20px;"><b></b>Price:<p id="price"></p></p>
+                    <p  style="margin-left: 20px;"><b></b>Seat:<p id="seat"></p></p>
+                    <button id="checkout" class="btn btn-primary">Check Out</button>
+                  </div>
+                  <div class="child-bookticket">
+                    <p id="hot">Hot Promo</p>
+                    <div class="opacity numberone"></div>
+                    <div class="bucket">
+                      <div class="heading">
+                        <h4>Christmas Bucket</h4>
+                        <p>Two Combos....</p>
+                      </div>
+                      <div class="texting">
+                        <h4>200 USD</h4>
+                      </div>
+                    </div>
+                    <div class="bucket">
+                      <div class="heading">
+                        <h4>New Year Bucket</h4>
+                        <p>Two Combos....</p>
+                      </div>
+                      <div class="texting">
+                        <h4>350 USD</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="ba">
+            <div class="footer col-lg">
+                <div class="footer_content">
+                    <p>GIỚI THIỆU</p>
+                    <ul>
+                        <li><i class="far fa-arrow-alt-circle-right"></i>VỀ CHÚNG TÔI</li>
+                        <li><i class="far fa-arrow-alt-circle-right"></i>THỎA THUẬN SỬ DỤNG</li>
+                        <li><i class="far fa-arrow-alt-circle-right"></i>QUY CHẾ HOẠT ĐỘNG</li>
+                        <li><i class="far fa-arrow-alt-circle-right"></i>CHÍNH SÁCH BẢO MẬT</li>
+                    </ul>
+                </div>
+                <div class="footer_content">
+                    <p>GÓC ĐIỆN ẢNH</p>
+                    <ul>
+                        <li><i class="far fa-file-video"></i>THỂ LOẠI PHIM</li>
+                        <li><i class="far fa-file-video"></i>BÌNH LUẬN PHIM</li>
+                        <li><i class="far fa-file-video"></i>BLOG ĐIỆN ẢNH</li>
+                        <li><i class="far fa-file-video"></i>PHIM HAY THÁNG</li>
+                    </ul>
+                </div>
+                <div class="footer_content">
+                    <p>HỖ TRỢ</p>
+                    <ul>
+                        <li>GÓP Ý</li>
+                        <li>SALE & SERVICE</li>
+                        <li>RẠP / GIÁ VÉ</li>
+                        <li>TUYỂN DỤNG</li>
+                    </ul>
+                </div>
+                <div class="footer_content">
+                    <div class="foot_sub">
+                        <p>LIÊN KẾT</p>
+                        <ul class="contact">
+                            <li><i class="fab fa-facebook"></i></li>
+                            <li><i class="fab fa-reddit-square"></i></li>
+                            <li><i class="fab fa-twitter-square"></i></li>
+                            <li><i class="fab fa-google-plus-square"></i></li>
+                        </ul>
+                    </div>
+                    <div class="foot_sub">
+                        <p>DOWNLOAD APP</p>
+                        <ul class="contact">
+                            <li><i class="fab fa-android"></i></li>
+                            <li><i class="fab fa-apple"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/fixbookticket.css">
+    <script src="../javascript/activate.js"></script>
+</body>
+</html>

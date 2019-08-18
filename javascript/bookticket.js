@@ -34,4 +34,4 @@ var vedachon = [3,26,10,20,35,40];
 //     var total = document.getElementById("cinema").appendChild(newseat);
 //     newseat.innerHTML = i;
 // }
-showseat();
+//showseat();

@@ -15,3 +15,4 @@ notifi.onclick = function(){
         notifi.classList.remove("activated");          
     }
 }
+$('.carousel').carousel();

@@ -109,6 +109,9 @@ a{
     width: 210px;
     text-align: center;
 }
+.submenu>li:hover{
+    color: #ec2772;
+}
 .menuitem:hover>.submenu{
     display:block;
     max-width: 210px;
@@ -133,6 +136,9 @@ a{
     font-size: 15px;
     text-align: center;
     display: none;
+}
+.sub_submenu>li:hover{
+    color: #ec2772;
 }
 .sub_subitem:hover>.sub_submenu>li{
     display:block;

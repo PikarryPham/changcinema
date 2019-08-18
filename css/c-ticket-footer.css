@@ -1,0 +1,56 @@
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 2px -5px 10px gainsboro; */
+    box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
+}
+.footer_content{
+    width: 20%;
+    /*background-color: yellow;*/
+    height: 100%;
+    opacity: .6;
+}
+.footer_content>p,.foot_sub>p{
+    font-weight: bold;
+    margin: 20px 0px 10px 10px;
+    color: white;
+}
+.footer_content>ul{
+    margin-top: 20px;
+    list-style-type: none;
+    color: white;
+}
+.footer_content>ul>li{
+    padding: 5px;
+}
+.footer_content>ul>li:hover,.support>li:hover{
+    color: #ff5860;
+}
+.footer_content>ul>li>i{
+    margin-right: 10px;
+}
+.contact{
+    display: flex;
+    padding: 0px;
+    color: whitesmoke;
+}
+.foot_sub>.contact>li{
+    padding: 5px;
+    list-style-type: none;
+}
+.foot_sub>.contact>li>i{
+    font-size: 25px;
+}
+.foot_sub>.contact>li:hover{
+    color: #ff5860;
+}
+.support{
+    padding: 0px;
+}
+.btn.btn-warning.position-absolute{
+    font-weight: bold;
+}

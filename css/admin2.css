@@ -9,7 +9,9 @@ html,body{
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
-    background-image: url("../img/photo.jpg");
+    background-image: url("../img/movie-details-bg.jpg");
+    width: 100vw;
+    height: 100vh;
 }
 p {
     font-family: 'Poppins', sans-serif;

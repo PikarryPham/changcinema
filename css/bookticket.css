@@ -4,22 +4,28 @@
 html,body{
     margin: 0 auto;
     position: relative;
+    background-image: url("../img/movie-details-bg.jpg");
 }
 .container-fluid{
     width: 100vw;
-    height: 800px;
+    height: 900px;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     grid-template-rows: 1fr;
 }
-.content:nth-child(1)
-{
-    background-color: #dadada;
+.content:nth-child(1) {
     display: grid;
+    width: 97%;
     grid-template-rows: 0.3fr 1.85fr 2fr;
+    grid-template-columns: 1fr;
+    /*grid-gap: 29px;*/
 }
 nav,.navbar{
     background-color: #17a2b8;
+    background-color: black;
+}
+.navbar{
+    height: 61px;
 }
 .content:nth-child(1)>.information:nth-child(2)
 {
@@ -34,20 +40,24 @@ nav,.navbar{
 .information:nth-child(3){
     display: grid;
     grid-template-rows: 2fr 0.5fr;
+    grid-template-columns: 1fr;
 }
 .feature:nth-child(1)
 {
     background-color: #17a2b8;
+    background-color: black;
 }
 .content:nth-child(2)
 {
-    background-color: lightslategray;
+    /*background-color: lightslategray;*/
     display: grid;
     grid-template-rows: 57.83px 400px auto;
+    /*grid-gap: 30px;*/
 }
 .content:nth-child(2)>.book-ticket:nth-child(odd)
 {
-    background-image: url("../img/movie-details-bg.jpg");
+    /*background-image: url("../img/movie-details-bg.jpg");*/
+    background-color: black;
 }
 .navbar>ul{
     padding: 0px;
@@ -135,7 +145,8 @@ nav,.navbar{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right,rgb(248, 180, 248),#005EFF,#009AFF,#60BAAE);
+    /*background-image: linear-gradient(to right,rgb(248, 180, 248),#005EFF,#009AFF,#60BAAE);*/
+    background-color: black;
 }
 .payment{
     width: 80%;
@@ -166,7 +177,7 @@ nav,.navbar{
 /*-----------------SLIDERSHOW--------------*/
 .slider{
     width: 100%;
-    height: 85%;
+    height: 88%;
     background-color: black;
 }
 .carousel-item.active,
@@ -359,13 +370,13 @@ nav,.navbar{
 }
 /*----------------CUSTOM PHAN DAT VE (CNT)----------*/
 .sub-ticket:nth-child(2){
-    /*background-color: lightskyblue;*/
+    background-color: lightskyblue;
     grid-row-start:1;
     grid-row-end:3;
     display: grid;
 }
 .sub-ticket:nth-child(3){
-    background-color: #fafafa;
+    background-color: lightsteelblue;
 }
 .sub-ticket:nth-child(2)>.alphabet{
     width: 100%;
@@ -373,6 +384,9 @@ nav,.navbar{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.carousel-indicators {
+    bottom: -18px!important;
 }
 .alphabet:nth-child(odd)
 {
@@ -405,7 +419,7 @@ nav,.navbar{
 .seat:nth-child(even){
     background-color: wheat;
 }
-.seat-choose{
+.seat.seat-choose{
     background-color: brown;
     position: relative;
 }
@@ -418,4 +432,29 @@ nav,.navbar{
     font-weight: bold;
     font-size: 1.5rem;
     transform: translate(-50%, -50%);
+}
+.seat.seat-selected{
+    background-color: #17a2b8;
+}
+/* .carousel-indicators li 
+{
+    text-indent: 0;
+    width: 80px;
+    height: 35px;
+} */
+.choose>h3{
+    color: white;
+}
+@media only screen and (max-width: 576px)
+{
+    .container-fluid{
+        grid-template-columns: 1fr;
+    }
+    .content:nth-child(1) {
+        display: grid;
+        width: 97%;
+        grid-template-rows: 100px 400px auto auto;
+        grid-template-columns: 1fr;
+        grid-gap: 29px;
+    }
 }

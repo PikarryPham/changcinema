@@ -1,0 +1,568 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0 auto;
+    position: relative;
+}
+.container-fluid{
+    background-image: url("../img/movie-details-bg.jpg");
+    width: 100vw;
+    height: 960px;
+    height: 1182px;
+}
+/*----------------THANH NAVBAR----------------*/
+.logo{
+    min-width: 30%;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 12%;
+}
+.menu{
+    float:right;
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 0px;
+    z-index: 15;
+}
+#nav{
+    z-index: 9999;
+}
+.menu>li{
+    padding: 10px 8px;
+    font-size: 15px;
+    width: 190px;
+    height: 110%;
+    text-align: center;
+}
+.menu>li:nth-child(1)
+{
+    padding: 10px 5px;
+    width: 50px;
+}
+.menu>li:nth-child(2), .menu>li:nth-child(3), .menu>li:nth-child(4), .menu>li:nth-child(5)
+{
+    margin: 5px 0px 0px 0px;
+}
+a{
+    text-decoration: none!important;
+    color: white;
+}
+/*---------------SUBMENU THU NHAT ---------------*/
+.menuitem{
+    position: relative;
+}
+.submenu{
+    list-style-type: none;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    z-index: 15;
+    display: none;
+}
+.submenu>li{
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+}
+.menuitem:hover>.submenu{
+    display:block;
+    max-width: 210px;
+    transition: all 0.6s ease-in-out;
+}
+li>i{
+    margin-right: 5px;
+}
+/*-----------------SUB_SUBMENU-------------*/
+.sub_subitem{
+    position: relative;
+}
+.sub_submenu{
+    list-style-type: none;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: -10%;
+    left: 100%;
+    width: 100px;
+}
+.sub_submenu>li{
+    padding: 10px 10px;
+    font-size: 15px;
+    text-align: center;
+    display: none;
+}
+.sub_subitem:hover>.sub_submenu>li{
+    display:block;
+    transition: all 0.6s ease-in-out;
+}
+i{
+    margin-left: 5px;
+}
+a{
+    font-weight: bold;
+}
+a>i{
+    margin-right: 5px;
+}
+/*--------------DIV CONTAIN------------------*/
+.contain{
+    width: 100%;
+    height: 900px;
+    background-color: lightcoral;
+    margin-top: 20px;
+}
+#mot{
+    width: 100vw;
+    height: 60px;
+}
+#content1, #content2{
+    width: 100vw;
+}
+/*-----------------------LEFT CONTENT----------------------*/
+.information:nth-child(1),
+.book-ticket:nth-child(1)
+{
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+}
+.information:nth-child(2),
+.book-ticket:nth-child(2)
+{
+    width: 100%;
+    height: 500px;
+    background: green;
+    background: black;
+}
+.information:nth-child(1){
+    background-image: url("../img/pet.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.choose>h3{
+    color: white;
+}
+.text {
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    opacity: .5;
+    display: flex;
+    align-self: flex-start;
+}
+.text p:nth-child(1) {
+    animation: down-one 3.5s infinite;
+}
+.text p:nth-child(1) {
+    transform: translateX(-100%);
+}
+.text p:nth-child(2) {
+    animation: down-two 3.5s infinite ;
+    position: relative;
+}
+.text p {
+    color: white;
+    margin-left: 20px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+@keyframes down-one {
+    0%  {
+        transform:translateX(-200%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+@keyframes down-two {
+    0%  {
+        transform:translateX(260%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+.infor {
+    background: #eeecec;
+    opacity: .6;
+    width: 100%;
+    height: 20%;
+    align-self: flex-end;
+}
+.infor>.special-p {
+    font-family: 'Staatliches', cursive;
+    font-size: 3em;
+    color: black;
+    margin-left: 10px;
+    white-space: wrap;
+}
+/*-----------------------------------------------------------*/
+#hai{
+    width: 100vw;
+    height: 900px;
+}
+#ba{
+    width: 100vw;
+    height: 221px;
+    background:black;
+}
+/*-----------------SLIDERSHOW--------------*/
+.slider{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+.carousel-item.active,
+.carousel-item
+{
+    width: 100%;
+    height: 100%;
+}
+.d-flex.w-100,
+#carouselExampleControls
+{
+    width: 100%;
+    height: 300px;
+}
+.d-flex.w-100
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.booking{
+    border-radius: 5px;
+    height: 75%;
+    width: 80%;
+    background-color: #60BAAE;
+    background-image: url("../img/movie-details-bg.jpg");
+    background-position: top;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    opacity: .7;
+}
+.child-booking:nth-child(1)
+{
+    background-color: #dadada;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.carousel-indicators{
+    bottom: -20px!important;
+}
+.carousel-indicators li{
+    width: 100px;
+    height: 20px;
+    text-indent: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-indicators li>p{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+/*---------------------content trong slider=------------------*/
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time>i{
+    font-size: 2rem;
+}
+.time:nth-child(1)
+{
+    border-bottom: 1px solid black;
+}
+.child-booking:nth-child(2){
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.sub-booking{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn.btn-light{
+    font-size: 1.25rem;
+    box-shadow: 7px 9px 16px -4px rgb(73, 71, 73,0.55);
+}
+.feature:nth-child(3)
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.payment{
+    width: 80%;
+    height: 75px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 7px 9px 16px -4px rgb(73, 71, 73);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    color: #913888;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon:nth-child(1)
+{
+    border-right: 2px solid #8608cfb9;
+}
+.icon>h4{
+    cursor: pointer!important;
+}
+.icon>i{
+    font-size: 1.6rem;
+}
+/*-----------------------NOI DUNG BEN TRAI DAT VE---------------------*/
+.child-bookticket:nth-child(odd)
+{
+    background-color: rgb(46, 33, 33);
+    height: 200px;
+    color: white;
+    width: 100%;
+}
+#hot{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 20px;
+}
+.child-bookticket:nth-child(even){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    height: 300px;
+}
+.opacity.numberone, .opacity.numbertwo{
+    width: 80%;
+    height: 101px;
+    position: absolute;
+    top: 24%;
+    background-image: linear-gradient(to right, #ff7b7b, #ff6663, #ff4f49, #ff342c, #ff0000);
+    border-radius: 10px;
+    z-index:15;
+    opacity: .7;
+}
+.bucket{
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bucket:nth-child(3)
+{
+    background-image: url("../img/christmasphoto.jpg");
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+.bucket:nth-child(4){
+    background-image: url("../img/bubble.jpg");
+    background-position: top;
+    background-size: cover;
+    filter: grayscale(80%);
+    position: relative;
+}
+.texting{
+    z-index:30;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+.heading{
+    z-index: 30;
+}
+.heading>h4,.heading>p{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+.texting>h4{
+    margin-right: 10px;
+}
+.btn.btn-primary{
+    position: relative;
+    left: 45%;
+    bottom: 5%;
+}
+.child-bookticket:nth-child(odd)>p{
+    margin-bottom: 10px;
+}
+/*--------------------NOTIFICATION--------------*/
+.notification{
+    position: absolute;
+    background: rgb(1, 184, 83);
+    width: 450px;
+    height: 50px;
+    top: 10%;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px; 
+    z-index: 10;
+    opacity: 0 ;
+    display: none;
+}
+.activated{
+    display: flex;
+    opacity: 1;
+    animation: faded 1s;
+}
+.notification>h4{
+    margin-bottom: 0px;
+}
+@keyframes faded{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*---------------FOOTER MAU DEN--------------*/
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*box-shadow: 2px -5px 10px gainsboro;*/
+    z-index: 30;
+}
+.footer_content{
+    width: 20%;
+    /*background-color: yellow;*/
+    height: 100%;
+    opacity: .6;
+}
+.footer_content>p,.foot_sub>p{
+    font-weight: bold;
+    margin: 20px 0px 10px 10px;
+    color: white;
+}
+ul{
+    margin-top: 20px;
+    list-style-type: none;
+    color: white;
+}
+ul>li{
+    padding: 5px;
+}
+.contact{
+    display: flex;
+    padding: 0px;
+}
+.contact>li{
+    padding: 2px;
+}
+/*-------------------------REPONSIVE----------------------*/
+@media only screen and (max-width: 576px)
+{
+    .infor>.special-p
+    {
+        font-size: 2.4em;
+        letter-spacing: 1px;
+        margin-top: 15px;
+    }
+    #nav{
+        height: 110px;
+        z-index: 999;
+    }
+    #hai{
+        margin-top: 54px;
+    }
+    .menu{
+        float: none;
+        width: 100%;
+    }
+    .menu li{
+        font-size: 14px;
+    }
+    #submenu02{
+        left: -75%;
+    }
+    #nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .submenu{
+        top: 60%;
+    }
+    .btn.btn-light {
+        font-size: 15px;
+        box-shadow: 7px 9px 16px -4px rgb(73, 71, 73,0.55);
+        font-weight: bold;
+    }
+    .notification {
+        left: 5%;
+    }
+    .container-fluid{
+        height: 2285px;
+    }
+    #ba {
+        height: 378px;
+        z-index: 999;
+        position: relative;
+        top: 39%;
+        padding: 0px;
+        width: 97vw;
+    }
+    .footer.col-lg{
+        padding: 0px;
+        width: 90%;
+    }
+    .footer_content {
+        width: 26%;
+        /* background-color: yellow; */
+        height: 100%;
+        opacity: .6;
+    }
+    .footer_content>ul{
+        padding: 0px;
+    }
+    .footer_content>ul>li{
+        font-size: 14px;
+    }
+    .booking {
+        height: 67%;
+    }
+}
